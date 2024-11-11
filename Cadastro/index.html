@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Padaria</title>
+  <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Coluna da Imagem -->
+    <div class="image-container">
+      <img src="logo.jpeg" alt="Logo da Marca" >
+    </div>
+    
+    <!-- Coluna do Formulário -->
+    <div class="form-container">
+      <h2>Cadastro Padaria São Pedro</h2>
+      <form id="registerForm">
+        <div class="input-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Senha:</label>
+          <input type="password" id="password" required>
+        </div>
+        <div class="input-group">
+          <label for="confirmPassword">Confirme a Senha:</label>
+          <input type="password" id="confirmPassword" required>
+        </div>
+        <button type="submit">Cadastrar</button>
+        <p id="message"></p>
+      </form>
+    </div>
+  </div>
+  
+  <script src="cadastro.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="produto.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria São Pedro</title>
+</head>
+<body>
+    <header>
+        <h1>Produtos da Padaria São Pedro</h1>
+    </header>
+
+    <button id="inicio" class="btn-personalizado" onclick="window.location.href='/Home/home.html';">INÍCIO</button>
+
+    <main>
+        <!-- Carrinho de Compras -->
+        <div id="carrinho" class="carrinho">
+            <h2>Carrinho de Compras</h2>
+            <ul id="carrinho-itens" class="carrinho-itens">
+                <!-- Os itens adicionados aparecerão aqui -->
+            </ul>
+            <p id="total-carrinho" class="total-carrinho">Total: R$ 0,00</p>
+            <button id="finalizar-compra" class="btn-finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+        </div>
+
+        <!-- Modal de Produto -->
+        <div id="product-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <img id="modal-image" src="" alt="Imagem do Produto">
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+                <p id="modal-price"></p>
+                <button id="adicionar-carrinho" class="btn-adicionar-carrinho">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <!-- Seção de Doces -->
+        <section class="doces">
+            <p>DOCES</p>
+            <section class="product-gallery">
+                <!-- Produto 1: Bolo de Chocolate -->
+                <div class="product-item">
+                    <img src="Imagens/bolo-chocolate.jpg" alt="Bolo de Chocolate">
+                    <h3>Bolo de Chocolate</h3>
+                    <p>Bolo fofinho com cobertura de chocolate.</p>
+                    <p>R$ 20,00</p>
+                </div>
+
+                <!-- Produto 2: Sonho -->
+                <div class="product-item">
+                    <img src="Imagens/sonho.jpg" alt="Sonho">
+                    <h3>Sonho</h3>
+                    <p>Massa macia e recheio cremoso, o doce perfeito para o seu café.</p>
+                    <p>R$ 4,50</p>
+                </div>
+
+                <!-- Produto 3: Torta de Morango -->
+                <div class="product-item">
+                    <img src="Imagens/torta-morango.jpg" alt="Torta de Morango">
+                    <h3>Torta de Morango</h3>
+                    <p>Torta com morangos frescos e creme de baunilha.</p>
+                    <p>R$ 25,00</p>
+                </div>
+
+                <!-- Produto 4: Pastel de Nata -->
+                <div class="product-item">
+                    <img src="Imagens/pastel-nata.jpg" alt="Pastel de Nata">
+                    <h3>Pastel de Nata</h3>
+                    <p>Tradicional doce português com creme de nata.</p>
+                    <p>R$ 5,00</p>
+                </div>
+            </section>
+        </section>
+
+        <!-- Seção de Salgados -->
+        <section class="salgados">
+            <p>SALGADOS</p>
+            <section class="product-gallery">
+                <!-- Produto 5: Pão Fresco -->
+                <div class="product-item">
+                    <img src="Imagens/pao-fresco.jpeg" alt="Pão Fresco">
+                    <h3>Pão Fresco</h3>
+                    <p>Um pão macio e fresquinho, feito todas as manhãs.</p>
+                    <p>R$ 3,00</p>
+                </div>
+
+                <!-- Produto 6: Croissant -->
+                <div class="product-item">
+                    <img src="Imagens/croissant.jpeg" alt="Croissant">
+                    <h3>Croissant</h3>
+                    <p>Feito com manteiga de qualidade, com massa folhada leve e crocante.</p>
+                    <p>R$ 6,00</p>
+                </div>
+
+                <!-- Produto 7: Sanduíche -->
+                <div class="product-item">
+                    <img src="Imagens/sanduiche.jpg" alt="Sanduíche">
+                    <h3>Sanduíche</h3>
+                    <p>Melhor sanduíche natural da região.</p>
+                    <p>R$ 13,50</p>
+                </div>
+
+                <!-- Produto 8: Pão de Queijo -->
+                <div class="product-item">
+                    <img src="Imagens/pao-queijo.jpg" alt="Pão de Queijo">
+                    <h3>Pão de Queijo</h3>
+                    <p>Tradicional pão de queijo, quentinho e saboroso.</p>
+                    <p>R$ 8,50</p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="produto.js"></script>
+</body>
+</html>
+
+
+
+
