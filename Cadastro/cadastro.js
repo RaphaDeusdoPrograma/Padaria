@@ -53,9 +53,7 @@ document.getElementById("registerForm").addEventListener("submit", function(even
   message.style.color = "green";
 
   // Redireciona para a página de login após 1 segundo
-  setTimeout(() => {
-    window.location.href = "login/login.html"; // Caminho relativo para a página de login
-  }, 1000);
+    window.location.href = "login/login.html"; 
 });
 
 
