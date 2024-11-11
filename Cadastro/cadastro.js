@@ -54,7 +54,7 @@ document.getElementById("registerForm").addEventListener("submit", function(even
 
   // Redireciona para a página de login após 1 segundo
   setTimeout(() => {
-    window.location.href = "Login/login.html"; // Caminho relativo para a página de login
+    window.location.href = "/Login/login.html"; // Caminho relativo para a página de login
   }, 1000);
 });
 
